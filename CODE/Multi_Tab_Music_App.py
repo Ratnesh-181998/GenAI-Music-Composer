@@ -716,7 +716,7 @@ with tab5:
     st.markdown("### 📜 Event Stream")
     log_scroll = st.container(height=400)
     with log_scroll:
-        for log in reversed(log_data):
+        for log in log_data:
             if log['level'] in selected_levels:
                 color = "#3498db" if log['level'] == "INFO" else "#2ecc71" if log['level'] == "SUCCESS" else "#f39c12" if log['level'] == "WARNING" else "#e74c3c"
                 st.markdown(f"""
