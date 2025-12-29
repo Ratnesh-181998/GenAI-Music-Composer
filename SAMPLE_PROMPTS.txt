@@ -1,0 +1,25 @@
+🎶 Sample Prompts for AI Music Composer
+========================================
+
+--- Standard Prompts ---
+1. "Generate a relaxing jazz tune with smooth saxophone melody and soft rhythm"
+2. "Compose a dramatic orchestral piece with layered strings and dynamic harmony"
+3. "Make a cheerful children's song with playful melody and simple rhythm"
+4. "Generate an emotional ballad with piano melody and rich harmony"
+5. "Create a lo-fi hip hop beat with a mellow piano loop and steady rhythm"
+6. "Compose a classical sonata with intricate violin patterns and balanced harmony"
+
+--- Special Genre Prompts ---
+1. "Cinematic sci-fi soundtrack with synth leads and pulsing rhythm"
+2. "Upbeat pop track with a catchy synthesizer hook and energetic rhythm"
+3. "Deep blues melody with a soulful guitar vibe and slow rhythm"
+4. "Futuristic cyberpunk theme with glitchy harmony and fast rhythm"
+
+--- Extreme & Fun Prompts ---
+1. "Extreme techno beat with rapid melody and intense rhythm"
+2. "Alien soundscape with unusual harmony and experimental rhythm"
+3. "Epic video game battle theme with heroic melody and driving rhythm"
+4. "Mystical forest soundtrack with soft flute melody and layered harmony"
+5. "Sad dystopian piano solo with atmospheric harmony"
+6. "Horror movie jump-scare theme with dissonant harmony and sharp rhythm"
+

@@ -1,0 +1,66 @@
+>>>>>>>>>>>>>>>>>>>
+
+
+🏗️ Project Architecture Diagram (Mermaid)
+flowchart LR
+
+%% =========================
+%% Setup Layer
+%% =========================
+A[Project & API Setup] --> B[Create Virtual Environment]
+B --> C[Configure Logging]
+C --> D[Define Custom Exceptions]
+D --> E[Install Libraries]
+E --> F[Integrate Groq API]
+
+%% =========================
+%% Utility Functions
+%% =========================
+F --> U1[Note Name to Frequency Converter]
+U1 --> U2[Generate WAV Audio]
+U2 --> U3[Music21 Library]
+U3 --> U4[Synthesizer Library]
+
+%% =========================
+%% Core Logic (Music AI)
+%% =========================
+U4 --> M1[Music LLM Class]
+M1 --> M2[Generate Melody from User Input]
+M2 --> M3[Generate Harmony Chords]
+M3 --> M4[Generate Rhythm]
+M4 --> M5[Adapt Music Style]
+
+%% =========================
+%% Application Layer
+%% =========================
+M5 --> S[Streamlit Application]
+
+%% =========================
+%% Containerization
+%% =========================
+S --> DCK[Dockerfile]
+
+%% =========================
+%% Version Control
+%% =========================
+DCK --> GIT[GitLab Repository]
+
+%% =========================
+%% CI/CD Pipeline
+%% =========================
+GIT --> CI[GitLab CI/CD]
+CI --> CO[Code Checkout]
+CO --> BI[Build Docker Image]
+BI --> GAR[Push Image to GCP Artifact Registry]
+GAR --> GKE[Deploy to GKE]
+
+%% =========================
+%% Orchestration
+%% =========================
+GKE --> K8S[Kubernetes Deployment File]
+K8S --> DEP[Deployed Application]
+
+%% =========================
+%% Feedback Loop
+%% =========================
+DEP -->|Code Updates| GIT

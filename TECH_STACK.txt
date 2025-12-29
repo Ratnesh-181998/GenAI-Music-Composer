@@ -1,0 +1,60 @@
+# Tech Stack
+
+- **Groq → LLM**
+  (Used as the Large Language Model – free)
+
+- **GitLab CI/CD → CI/CD Tool**
+  Used for creating and managing CI/CD pipelines.
+
+- **LangChain → Generative AI Framework**
+  Used to interact with the LLM and build GenAI workflows.
+
+- **GitLab → SCM (Source Code Management)**
+  Used as the source code repository for the project.
+
+- **Music21**
+  Used to handle music theory concepts such as notes, chords, etc.
+
+- **Streamlit**
+  Used to build the UI / frontend of the application.
+
+- **Docker**
+  Used for containerization of the application during deployment.
+
+- **Synthesizer**
+  Used for generating sound waves (e.g., sine waves) from musical notes.
+
+- **GCP GAR (Google Artifact Registry)**
+  Used for storing Docker images.
+
+- **GCP GKE (Google Kubernetes Engine)**
+  Used to deploy and run the application on the cloud inside a Kubernetes cluster.
+
+# Logical Flow
+
+1. **LLM**: Converts text into musical notes and chords.
+2. **Music21**: Processes musical theory.
+3. **Generation**: Generates actual musical notes & chords.
+4. **Synthesizer**: Converts notes into sound waves.
+5. **Output**: Final output is the generated Music.
+
+
+🔍 High-Level Flow Explanation
+
+User input is processed by the Music LLM (Groq)
+
+LLM generates musical notes & chords
+
+Music21 converts theory into structured musical data
+
+Synthesizer generates actual sound waves (music)
+
+Streamlit UI presents and plays the output
+
+App is containerized using Docker
+
+GitLab CI/CD builds and pushes images to GCP Artifact Registry
+
+GKE (Kubernetes) deploys the application at scale
+
+>>>>>>>>>>>>.>>>>>>>>>>
