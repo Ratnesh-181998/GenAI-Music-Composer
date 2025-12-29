@@ -137,12 +137,24 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 ])
 
 # Loading documentation content
+# Loading documentation content
 def load_txt(filename):
-    path = os.path.join("..", filename)
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return f.read()
-    return "Documentation not found."
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    PARENT_DIR = os.path.dirname(BASE_DIR)
+    
+    # List of paths to check: Parent (local), Current (flat deployment), Working Dir (root)
+    check_paths = [
+        os.path.join(PARENT_DIR, filename),
+        os.path.join(BASE_DIR, filename),
+        os.path.join(os.getcwd(), filename)
+    ]
+    
+    for path in check_paths:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return f.read()
+                
+    return f"Documentation ({filename}) not found."
 
 # --- TAB 1: DEMO ---
 with tab1:
@@ -555,8 +567,25 @@ with tab4:
 
     # Static Workflow Image
     st.markdown("### 🖼️ Detailed System Blueprint")
-    archi_img_path = os.path.join("..", "AI+Music+Composer+Workflow.png")
-    if os.path.exists(archi_img_path):
+    
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    PARENT_DIR = os.path.dirname(BASE_DIR)
+    
+    img_name = "AI+Music+Composer+Workflow.png"
+    # Search for image in multiple potential locations
+    paths_to_check = [
+        os.path.join(PARENT_DIR, img_name),
+        os.path.join(BASE_DIR, img_name),
+        img_name
+    ]
+    
+    archi_img_path = None
+    for p in paths_to_check:
+        if os.path.exists(p):
+            archi_img_path = p
+            break
+
+    if archi_img_path:
         st.image(archi_img_path, caption="Comprehensive AI Music Composer Workflow", use_container_width=True)
     else:
         st.warning("⚠️ High-resolution workflow image not found at the expected path.")
