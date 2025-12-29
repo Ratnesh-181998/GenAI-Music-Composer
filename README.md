@@ -16,18 +16,8 @@
 This project is designed as a template for **Production-Grade AI Orchestration**, showcasing best practices in LLM chaining, digital signal synthesis, and cloud-native deployment.
 
 ---
-<<<<<<< HEAD
 
 ## 🎬 Experience the Innovation
-=======
-## 🌐🎬 Live Demo
-🚀 **Try it now:**
-- **Streamlit Profile** - https://share.streamlit.io/user/ratnesh-181998
-- **Project Demo** - https://genai-music-composer-qnshg7dgddexrjverkd2e5.streamlit.app/
-- 
----
-## 🎬 Live Demonstration
->>>>>>> e6aff386ad24aa39dde292d2db95495b1ed76497
 
 ### **Interactive Music Workshop**
 Experience how a simple text prompt becomes a full orchestral arrangement in seconds.
@@ -130,17 +120,7 @@ GROQ_API_KEY=your_key_here
 -   📧 **Email**: [rattudacsit2021gate@gmail.com](mailto:rattudacsit2021gate@gmail.com)
 -   💼 **LinkedIn**: [ratneshkumar1998](https://www.linkedin.com/in/ratneshkumar1998/)
 -   🐙 **GitHub**: [Ratnesh-181998](https://github.com/Ratnesh-181998)
-<<<<<<< HEAD
 -   📱 **Phone**: +91-947XXXXX46 (IST Timezone)
-=======
--   📱 **Phone**: +91-947XXXXX46
-
-### **Project Links**
--   🌐 **Live Demo**: [Streamlit App](https://genai-music-composer-qnshg7dgddexrjverkd2e5.streamlit.app/)
--   📖 **Documentation**: [GitHub Wiki](https://github.com/Ratnesh-181998/GenAI-Music-Composer/wiki)
--   🐛 **Issue Tracker**: [GitHub Issues](https://github.com/Ratnesh-181998/GenAI-Music-Composer/issues)
--   💬 **Discussions**: [GitHub Discussions](https://github.com/Ratnesh-181998/GenAI-Music-Composer/discussions)
->>>>>>> e6aff386ad24aa39dde292d2db95495b1ed76497
 
 ---
 
@@ -149,6 +129,7 @@ GROQ_API_KEY=your_key_here
 -   🌐 **Live Application**: [Streamlit Cloud](https://genai-music-composer-qnshg7dgddexrjverkd2e5.streamlit.app/)
 -   📖 **Full Documentation**: [GitHub Wiki](https://github.com/Ratnesh-181998/GenAI-Music-Composer/wiki)
 -   🏗️ **Issue Tracker**: [GitHub Issues](https://github.com/Ratnesh-181998/GenAI-Music-Composer/issues)
+-   💬 **Discussions**: [GitHub Discussions](https://github.com/Ratnesh-181998/GenAI-Music-Composer/discussions)
 
 ---
 *Built with professional integrity and Generative AI excellence. © 2024 Ratnesh Kumar Singh.*
