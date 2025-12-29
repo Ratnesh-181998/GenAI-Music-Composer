@@ -106,23 +106,48 @@ For a non-technical overview, here is how the orchestration works in simple term
 *   **Prompt-to-Music Interface**: User-friendly workshop with predefined "One-Click Moods" (Lo-fi, Jazz, Classical).
 *   **Real-time Orchestration**: Visual status updates showing the AI's step-by-step reasoning.
 *   **Pro Audio Player**: Immediate playback of high-fidelity WAV streams.
+<img width="1841" height="773" alt="image" src="https://github.com/user-attachments/assets/555a5287-eba9-4a72-8789-bca4ad2bb170" />
+<img width="1835" height="704" alt="image" src="https://github.com/user-attachments/assets/a97c3153-6330-4a6e-9c29-d51300409821" />
+<img width="1823" height="754" alt="image" src="https://github.com/user-attachments/assets/661f714e-b8f9-4c15-91d6-d6113df96042" />
+<img width="1866" height="753" alt="image" src="https://github.com/user-attachments/assets/9fa0fed4-acb0-4c9b-a7aa-efe89e9d5c2f" />
+<img width="1838" height="766" alt="image" src="https://github.com/user-attachments/assets/8f6cfa51-9b67-4897-b015-4f80de07bf22" />
+<img width="1792" height="813" alt="image" src="https://github.com/user-attachments/assets/ebfa3ca2-8b85-4543-b0be-b73aaaf9106f" />
+<img width="1848" height="774" alt="image" src="https://github.com/user-attachments/assets/8ceb3362-5c99-4e38-a963-6665a11632ee" />
+<img width="1799" height="741" alt="image" src="https://github.com/user-attachments/assets/d30c40c6-93c4-40ee-8a06-8132ba8e6d9d" />
+<img width="1842" height="771" alt="image" src="https://github.com/user-attachments/assets/1877d620-e396-4b46-8937-79ff41acc33a" />
+<img width="1791" height="771" alt="image" src="https://github.com/user-attachments/assets/f2667f22-0adf-46ba-b02c-2e4d0f375299" />
+<img width="1821" height="780" alt="image" src="https://github.com/user-attachments/assets/7668ad7e-c770-4c55-bbea-62e9fba5336b" />
 
 ### **2. 📖 About Project Tab**
 *   **Technical Roadmap**: A deep dive into the evolution of the project from concept to cloud deployment.
 *   **Project Vision**: Understanding the synergy between AI and human creativity.
+<img width="1850" height="761" alt="image" src="https://github.com/user-attachments/assets/6bbbc02b-df2e-48c6-acae-d39c755bc60b" />
+<img width="1571" height="736" alt="image" src="https://github.com/user-attachments/assets/695e3388-cdfa-4a48-8abd-17aacf411179" />
+<img width="1861" height="764" alt="image" src="https://github.com/user-attachments/assets/2e0fa8ea-1ef2-410f-9a70-fb1593102ab9" />
 
 ### **3. 🔧 Tech Stack Tab**
 *   **Interactive 2x2 Grid**: Hover-responsive cards detailing every technology used in the project.
 *   **Badge System**: Visual indicators for performance (Optimal), stability (Stable), and quality (HQ).
+<img width="1848" height="759" alt="image" src="https://github.com/user-attachments/assets/9c0680b7-bb84-4ebb-a9a2-1c1195fe3a12" />
+<img width="1835" height="761" alt="image" src="https://github.com/user-attachments/assets/7b1be502-059d-43f4-b06e-3394c841c8fc" />
+<img width="1846" height="734" alt="image" src="https://github.com/user-attachments/assets/4925a923-c01c-4e53-9752-d66ba228b950" />
+<img width="1518" height="778" alt="image" src="https://github.com/user-attachments/assets/7a943743-1457-46a9-89e3-bf3e2ef81f21" />
 
 ### **4. 🏗️ Architecture Tab**
 *   **Blueprint Journey**: A custom HTML/CSS architectural map showing the flow from Developer -> Cloud.
 *   **Simple Logic Flow**: Non-technical explanations for stakeholders.
+<img width="1814" height="721" alt="image" src="https://github.com/user-attachments/assets/c9d24dde-c8ff-4f3f-8509-0e032f1f13ee" />
+<img width="1833" height="760" alt="image" src="https://github.com/user-attachments/assets/fbdaf16c-2c6b-4742-953a-9a81ab2b5f22" />
+<img width="1866" height="767" alt="image" src="https://github.com/user-attachments/assets/1b12a625-88ac-4c30-8712-4b94a2d88f08" />
+<img width="1867" height="801" alt="image" src="https://github.com/user-attachments/assets/4fe2b6d7-b56f-4f82-bb70-6e4b70de809d" />
 
 ### **5. 📋 System Logs Tab**
 *   **Operations Monitor**: Real-time tracking of AI API heartbeats and generation success rates.
 *   **IST Time-Syncing**: All events captured in **Indian Standard Time (+5:30)** for accurate local tracking.
 *   **Log Export**: Instant download of session history for maintenance and audit.
+<img width="1855" height="771" alt="image" src="https://github.com/user-attachments/assets/51139217-81b9-464e-87b3-0979b3b619aa" />
+<img width="1590" height="684" alt="image" src="https://github.com/user-attachments/assets/989be2b0-105b-4c33-ba32-cf8af1ad1ffe" />
+<img width="1816" height="729" alt="image" src="https://github.com/user-attachments/assets/b7d2dfbf-6c6d-4394-a78e-791a15fad551" />
 
 ---
 
