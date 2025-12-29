@@ -17,6 +17,25 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# --- Logging System ---
+if "logs" not in st.session_state:
+    st.session_state.logs = [
+        {"time": datetime.now().strftime("%H:%M:%S"), "level": "INFO", "msg": "System Boot Sequence Initialized.", "icon": "ℹ️"},
+        {"time": datetime.now().strftime("%H:%M:%S"), "level": "SUCCESS", "msg": "Cloud Infrastructure Verified.", "icon": "✅"},
+        {"time": (datetime.now()).strftime("%H:%M:%S"), "level": "INFO", "msg": "Groq LPU Engine Ready.", "icon": "🚀"}
+    ]
+
+def add_log(level, msg, icon="ℹ️"):
+    new_log = {
+        "time": datetime.now().strftime("%H:%M:%S"),
+        "level": level,
+        "msg": msg,
+        "icon": icon
+    }
+    st.session_state.logs.insert(0, new_log) # Add to top
+    if len(st.session_state.logs) > 50: # Cap logs
+        st.session_state.logs.pop()
+
 # Custom CSS for premium design (inspired by Multi Agent app)
 st.markdown("""
 <style>
@@ -253,14 +272,21 @@ with tab1:
     if generate_clicked and music_input:
         generator = MusicLLM()
         with st.status("🧠 AI Music Orchestration in Progress...", expanded=True) as status:
+            add_log("INFO", f"Generation request received for style: {style}", "📥")
             st.write("📡 Connecting to Groq LPU Inference Engine...")
             melody = generator.generate_melody(music_input)
+            add_log("SUCCESS", "LLM Inference Complete: Melody Pattern Found.", "🎹")
+            
             st.write("🎹 Constructing harmonic chord progressions...")
             harmony = generator.generate_harmony(melody)
+            add_log("INFO", "Harmonic Progression Layered.", "🎼")
+            
             st.write("🥁 Finalizing rhythmic syncopation...")
             rhythm = generator.generate_rythm(melody)
+            
             st.write("🔊 Synthesizing high-fidelity audio frequencies...")
             composition = generator.adapt_style(style,melody,harmony,rhythm)
+            add_log("SUCCESS", f"Waveform Synthesis Complete ({style} style).", "🔊")
 
             melody_notes = melody.split()
             melody_freqs = note_to_frequencies(melody_notes)
@@ -283,6 +309,7 @@ with tab1:
                 "style": style
             }
             status.update(label="✅ Composition Successfully Crafted!", state="complete", expanded=False)
+            add_log("SUCCESS", "Project Portfolio Export: WAV ready for playback.", "🎁")
     elif not st.session_state.music_results:
         st.info("💡 Waiting for your command. Click 'Generate Music' above to start the AI process.")
 
@@ -624,39 +651,36 @@ with tab5:
     </div>
     """, unsafe_allow_html=True)
 
-    # Simulated Log Data
-    log_data = [
-        {"time": "22:50:12", "level": "INFO", "msg": "System Boot Sequence Initialized.", "icon": "ℹ️"},
-        {"time": "22:50:15", "level": "SUCCESS", "msg": "Groq LPU Connection Established (Latency: 45ms).", "icon": "✅"},
-        {"time": "22:51:02", "level": "INFO", "msg": "Music21 Theory Engine Loaded (v9.1).", "icon": "ℹ️"},
-        {"time": "22:52:10", "level": "INFO", "msg": "Synthesizer Waveform Buffer Ready.", "icon": "ℹ️"},
-        {"time": "22:53:45", "level": "SUCCESS", "msg": "Security SSL Layer Verified.", "icon": "✅"},
-        {"time": "22:54:20", "level": "WARNING", "msg": "High memory usage detected in GKE Node-3.", "icon": "⚠️"},
-        {"time": "22:55:01", "level": "INFO", "msg": "Streamlit Frontend Heartbeat: Healthy.", "icon": "💓"},
-        {"time": "22:56:30", "level": "SUCCESS", "msg": "ML Model Llama-3.1-8b Partition Warm-up Complete.", "icon": "🚀"}
-    ]
+    # Dynamic Log Data from Session State
+    log_data = st.session_state.logs
 
     # Metrics Row
     m1, m2, m3 = st.columns(3)
+    
+    total_events = len(log_data)
+    success_count = len([l for l in log_data if l['level'] == 'SUCCESS'])
+    error_count = len([l for l in log_data if l['level'] == 'ERROR'])
+    success_rate = (success_count / total_events * 100) if total_events > 0 else 0
+    
     with m1:
-        st.markdown("""
+        st.markdown(f"""
         <div style='background: rgba(40, 116, 240, 0.1); padding: 15px; border-radius: 10px; border-left: 5px solid #2874f0; text-align: center;'>
             <h4 style='color: #bdc3c7; margin: 0; font-size: 0.9rem;'>TOTAL EVENTS</h4>
-            <p style='color: #2874f0; font-size: 1.8rem; font-weight: bold; margin: 5px 0;'>1,284</p>
+            <p style='color: #2874f0; font-size: 1.8rem; font-weight: bold; margin: 5px 0;'>{total_events}</p>
         </div>
         """, unsafe_allow_html=True)
     with m2:
-        st.markdown("""
+        st.markdown(f"""
         <div style='background: rgba(46, 204, 113, 0.1); padding: 15px; border-radius: 10px; border-left: 5px solid #2ecc71; text-align: center;'>
             <h4 style='color: #bdc3c7; margin: 0; font-size: 0.9rem;'>SUCCESS RATE</h4>
-            <p style='color: #2ecc71; font-size: 1.8rem; font-weight: bold; margin: 5px 0;'>99.8%</p>
+            <p style='color: #2ecc71; font-size: 1.8rem; font-weight: bold; margin: 5px 0;'>{success_rate:.1f}%</p>
         </div>
         """, unsafe_allow_html=True)
     with m3:
-        st.markdown("""
+        st.markdown(f"""
         <div style='background: rgba(231, 76, 60, 0.1); padding: 15px; border-radius: 10px; border-left: 5px solid #e74c3c; text-align: center;'>
             <h4 style='color: #bdc3c7; margin: 0; font-size: 0.9rem;'>API ERRORS</h4>
-            <p style='color: #e74c3c; font-size: 1.8rem; font-weight: bold; margin: 5px 0;'>0</p>
+            <p style='color: #e74c3c; font-size: 1.8rem; font-weight: bold; margin: 5px 0;'>{error_count}</p>
         </div>
         """, unsafe_allow_html=True)
 
