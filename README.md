@@ -57,6 +57,33 @@ The application follows a rigorous **four-layer architectural pattern** to ensur
 
 ---
 
+## 🛠️ Detailed Component Analysis
+
+The following technologies form the core of the GenAI Music Composer studio:
+
+- **🧠 Groq (LLM Inference)**: Leveraged for its ultra-low latency LPU, providing the computational power for real-time music structure generation.
+- **⚓ LangChain**: The generative AI framework used to orchestrate complex prompts and manage the conversation flow with the LLM.
+- **🎼 Music21**: A sophisticated toolkit for computer-aided musicology, used to handle notes, chords, and rhythmic structures.
+- **🔊 Synthesizer**: Custom implementation for generating high-fidelity frequency sound waves from digital note data.
+- **🐳 Docker**: Ensures environmental consistency through containerization, making the app deployable across any infrastructure.
+- **🚀 GitLab CI/CD**: Automates the build and deployment pipelines, ensuring a robust and repeatable delivery process.
+- **☁️ GCP GKE (Google Kubernetes Engine)**: The production-grade home for the application, providing auto-scaling and high availability.
+- **📦 GCP GAR (Artifact Registry)**: A secure, private repository for managing container images.
+
+---
+
+## 🔍 Logical Execution Flow
+
+The system operates through a sequential five-stage pipeline:
+
+1. **LLM Analysis**: Interprets natural language and maps intent to musical parameters.
+2. **Music Theory Layer**: Processes generated notes through `Music21` for structural validation.
+3. **Sequence Generation**: Constructs the actual musical notes, chords, and rhythmic patterns.
+4. **Waveform Synthesis**: `Synthesizer` converts frequency data into playable sound waves.
+5. **UI Presentation**: `Streamlit` delivers the final audio and performance metrics to the user.
+
+---
+
 ## 📋 Comprehensive Feature Walkthrough
 
 ### **1. 🎬 Demo Project Tab**
