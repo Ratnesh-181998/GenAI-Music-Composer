@@ -45,7 +45,8 @@ The application follows a rigorous **four-layer architectural pattern** to ensur
 4.  **☁️ Cloud-Native Deployment**: Fully containerized with **Docker**, orchestrated on **Google Kubernetes Engine (GKE)**, and managed via **GitLab CI/CD**.
 
 ### **🖼️ Detailed System Blueprint**
-![System Architecture Blueprint](AI+Music+Composer+Workflow.png)
+- System Architecture Blueprint
+<img width="2021" height="1024" alt="image" src="https://github.com/user-attachments/assets/79a42fe2-84fa-406c-b1a9-fc6256f4c5ae" />
 
 ---
 
