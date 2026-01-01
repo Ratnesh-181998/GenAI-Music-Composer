@@ -1,4 +1,3 @@
-<img width="1660" height="848" alt="image" src="https://github.com/user-attachments/assets/7dcbf64b-f2c9-439a-9069-ff558c189e3e" />
 
 # 🎹 GenAI Music Composer: Professional Orchestration Studio
 ### *Transforming Natural Language into High-Fidelity Musical Compositions with Llama 3.1 & Groq LPU*
@@ -8,6 +7,8 @@
 [![Groq LPU](https://img.shields.io/badge/Inference-Groq_LPU-orange?style=for-the-badge)](https://groq.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Git LFS](https://img.shields.io/badge/Storage-Git_LFS-blue?style=for-the-badge&logo=git-lfs)](https://git-lfs.com/)
+
+<img width="1660" height="848" alt="image" src="https://github.com/user-attachments/assets/7dcbf64b-f2c9-439a-9069-ff558c189e3e" />
 
 ---
 
