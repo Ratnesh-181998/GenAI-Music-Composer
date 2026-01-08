@@ -35,6 +35,12 @@ Experience how a simple text prompt becomes a full orchestral arrangement in sec
 - Composition Result | music_generation_result
 <img width="1666" height="727" alt="image" src="https://github.com/user-attachments/assets/de72c37a-7b43-405b-906f-821fe2680da9" />
 
+---
+
+### 🎬 Live Project Demo
+> Experience the full flow:
+
+![Project Demo Walkthrough](Final_Project_Walkthrough.gif)
 
 ---
 
